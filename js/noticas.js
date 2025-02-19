@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        fetch("js/noticias.json")
+        fetch("../assets/json/noticias.json")
             .then(response => response.json())
             .then(data => {
                 const noticia = data.find(n => n.titulo === decodeURIComponent(noticiaId));
